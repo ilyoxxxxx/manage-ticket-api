@@ -1,15 +1,19 @@
-name = "manage-ticket-api"
+name = "manage-api"
 main = "worker.js"
 compatibility_date = "2024-11-01"
 
+# ===== KV NAMESPACES =====
 kv_namespaces = [
-  { binding = "TICKETS", id = "e2ce64cc36f34908843d4f10aff21362" },
-  { binding = "TRANSCRIPTS", id = "678c88612f444484a21c78ee25e5ba9b" },
-  { binding = "STATS", id = "1ce6b619db6a45928062543fd37c7666" }
+  { binding = "TICKETS",     id = "e2ce64cc36f34908843d4f10aff21362" },
+  { binding = "AUTOMOD",     id = "cc7948609af54c16ac4542e094ec2bec" },
+  { binding = "STATS",       id = "1ce6b619db6a45928062543fd37c7666" },
+  { binding = "TRANSCRIPTS", id = "678c88612f444484a21c78ee25e5ba9b" }
 ]
 
+# ===== VARIABLES D’ENVIRONNEMENT =====
 [vars]
 API_KEY = "Managebot@@@"
+
 DISCORD_CLIENT_ID = "1431421654038351942"
 DISCORD_CLIENT_SECRET = "fEmzBIt4vpAiVu-IIEcSkpxUxCIMlOZ-"
 DISCORD_REDIRECT_URI = "https://manage-ticket-api.ilyesquibroute93.workers.dev/auth/discord/callback"
