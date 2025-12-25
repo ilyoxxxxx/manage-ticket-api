@@ -1,3 +1,6 @@
+export default {
+  async fetch(req, env) {
+    const url = new URL(req.url);
 
 
 const API_URL = "https://manage-ticket-api.ilyesquibroute93.workers.dev";
@@ -181,5 +184,6 @@ ${msg.content.slice(0, 1500)}
     }
   });
 };
+
 
 
