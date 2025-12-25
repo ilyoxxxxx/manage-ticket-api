@@ -1,4 +1,4 @@
-const fetch = require("node-fetch");
+
 
 const API_URL = "https://manage-ticket-api.ilyesquibroute93.workers.dev";
 const API_KEY = "Managebot@@@";
@@ -181,4 +181,5 @@ ${msg.content.slice(0, 1500)}
     }
   });
 };
+
 
