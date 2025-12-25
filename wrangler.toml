@@ -1,0 +1,11 @@
+name = "manage-ticket-api"
+main = "worker.js"
+compatibility_date = "2024-11-01"
+
+kv_namespaces = [
+  { binding = "TICKETS", id = "e2ce64cc36f34908843d4f10aff21362" },
+  { binding = "TRANSCRIPTS", id = "678c88612f444484a21c78ee25e5ba9b" }
+]
+
+[vars]
+API_KEY = "Managebot@@@"
